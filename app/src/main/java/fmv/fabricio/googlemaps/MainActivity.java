@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity
         double lt1 = Double.parseDouble(latitud1);
         double lg1 = Double.parseDouble(longitud1);
 
-        // Ubicacion N°1
+        // Marcador de la Ubicacion N°1
         mMap = googleMap;
         LatLng ubi1 = new LatLng(lt1, lg1);
         mMap.addMarker(new MarkerOptions()
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity
         double lt2 = Double.parseDouble(latitud2);
         double lg2 = Double.parseDouble(longitud2);
 
-        // Ubicacion N°2
+        // Marcador de la Ubicacion N°2
         mMap = googleMap;
         LatLng ubi2 = new LatLng(lt2, lg2);
         mMap.addMarker(new MarkerOptions()
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity
         double lt3 = Double.parseDouble(latitud3);
         double lg3 = Double.parseDouble(longitud3);
 
-        // Ubicacion N°3
+        // Marcador de la Ubicacion N°3
         mMap = googleMap;
         LatLng ubi3 = new LatLng(lt3, lg3);
         mMap.addMarker(new MarkerOptions()
