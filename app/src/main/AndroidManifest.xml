@@ -18,6 +18,9 @@
         android:theme="@style/Theme.GoogleMaps"
         tools:targetApi="31">
         <activity
+            android:name=".ubicaciones"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
 
@@ -26,7 +29,7 @@
             android:value="AIzaSyCSIb2GrhX8IQnWOIKJ_0q5mrnfLa_-Uls" />
 
         <activity
-            android:name=".ubicaciones"
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

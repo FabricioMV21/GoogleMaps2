@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class ubicaciones extends AppCompatActivity {
     EditText ubi1, ubi2, ubi3;
@@ -33,11 +34,16 @@ public class ubicaciones extends AppCompatActivity {
                 String ubicacion3 = ubi3.getText().toString();
 
                 // Pasar las ubicaciones a la siguiente ACTIVITY
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.putExtra("Ubicacion1", ubicacion1);
-                intent.putExtra("Ubicacion2", ubicacion2);
-                intent.putExtra("Ubicacion3", ubicacion3);
-                startActivity(intent);
+                if(ubicacion1.isEmpty() || ubicacion2.isEmpty() || ubicacion3.isEmpty()){
+                    Toast.makeText(ubicaciones.this, "Ningun Campo Debe Estar Vacio", Toast.LENGTH_SHORT).show();
+                }else{
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    intent.putExtra("Ubicacion1", ubicacion1);
+                    intent.putExtra("Ubicacion2", ubicacion2);
+                    intent.putExtra("Ubicacion3", ubicacion3);
+                    startActivity(intent);
+                }
+
             }
         });
     }
