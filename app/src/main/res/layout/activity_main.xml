@@ -27,7 +27,7 @@
             android:layout_height="30dp"
             android:layout_marginLeft="30dp"
             android:text="Marcadores"
-            android:textColor="#2A3EA1"
+            android:textColor="#071D6A"
             android:textSize="22dp"
             android:textStyle="bold"></TextView>
 
